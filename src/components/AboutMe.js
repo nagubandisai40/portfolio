@@ -3,15 +3,15 @@ import '../css/card.css';
 class AboutMe extends Component {
   render() {
     return (
-       <div style={{height:"100%" ,width:"100%",}} className="parent">
-         <div style={{width:"70%"}} className="child">
+       <div className="parent-about">
+         <div className="child-about">
               <p className="intro-name"><b>Nagubandi Sai Kumar</b></p>
-              <br/>
+              <br className="break-about"></br>
               <center>
-              <div style={{width:"60%"}}>
+              {/* <div  className="pitch-div"> */}
               <p className="short-pitch">I am self-motivated and Pursuing my degree at BV Raju Institute of Technology. I had worked on android app and Web development, very
 much interested in analyzing a huge amount of data and to extract the knowledge and insights from that data.</p>
-              </div>  
+              {/* </div>   */}
               </center>
               <div className="social-links">
                   {/* LinkedIn */}

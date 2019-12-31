@@ -60,8 +60,8 @@ class Contact extends Component {
   render() {
     return (
       <div style={{ width: "100%", height: "100%" }} className="parent">
-        <div className="child1" style={{ width: "40%" }}>
-          <Card shadow={0} calssName="contact-card" style={{ margin: 'auto', width: "80%" }}>
+        <div className="child11">
+          <Card shadow={0} calssName="contact-card" style={{ margin: 'auto'}}>
             <center><h4>Feedback Form</h4></center>
             <br></br>
             <div className="inputfields">
