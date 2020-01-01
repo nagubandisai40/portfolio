@@ -5,7 +5,7 @@ import '../css/card.css';
 class ProjectComponent extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{background:"white"}}>
         <Card shadow={5} className="project-card">
           <CardTitle className="cardTitle" style={{background: 'url('+this.props.imageUrl+') center / cover' }}>
             {/* {this.props.name} */}

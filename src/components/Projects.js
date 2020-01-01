@@ -35,14 +35,14 @@ class Project extends Component {
       return (
         <div className="wrapper">
           {this.state.flutter.map(flutter => <ProjectComponent name={flutter.Name} githubUrl={flutter.githubUrl} imageUrl={flutter.imageUrl}></ProjectComponent>)}
-         </div>
+        </div>
       );
     } else {
       return (
         <div className="wrapper">
           {this.state.ds.map(data => <ProjectComponent name={data.Name} githubUrl={data.githubUrl} imageUrl={data.imageUrl}></ProjectComponent>)}
         </div>
-        );
+      );
     }
   }
 
@@ -77,23 +77,25 @@ class Project extends Component {
 
   render() {
     return (
-      <div className="demo-tabs" style={{background:"#fff", height:"100%"}}>
-        <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>Android</Tab>
-          <Tab>Web</Tab>
-          <Tab>Flutter</Tab>
-          <Tab>Data Science</Tab>
-        </Tabs>
-        <div style={{marginTop:"15px"}}>
-        {this.getTabContent()}
-        </div>
-        {/* <Grid>
+      <div style={{background:"#fff",height:"100%"}}>
+        <div className="demo-tabs" >
+          <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
+            <Tab>Android</Tab>
+            <Tab>Web</Tab>
+            <Tab>Flutter</Tab>
+            <Tab>Data Science</Tab>
+          </Tabs>
+          <div style={{ marginTop: "15px" }}>
+            {this.getTabContent()}
+          </div>
+          {/* <Grid>
           <Cell col={12}>
             <div className="getTabContent">
               {this.getTabContent()}
             </div>
           </Cell>
         </Grid> */}
+        </div>
       </div>
     );
   }
