@@ -82,6 +82,43 @@
         padding: 15px;
     }
     
+div.wrapper{
+    padding: 0px;
+}
+.project-card{
+    margin: auto;
+    
+    /* background-color: red; */
+   }
+   .card-image{
+    height:100px;
+    }
+    .card-title1{
+    height:30px;
+    padding: 0px;
+    font-size:5px;
+    
+    }   
+
+}
+
+/* For project page */
+
+.wrapper{
+    padding: 20px;
+}
+.project-card{
+ min-width: 200px;
+ height:300; 
+ margin: auto;
+}
+.cardTitle{
+    height:200px;
+}
+.card-title1{
+    height:50px;
+    overflow: hidden;
+    font-size:10px;
 }
 
 /* For About me page */

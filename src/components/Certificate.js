@@ -30,7 +30,7 @@ class Certificate extends Component {
 
   render() {
     return (
-      <div className="wrapper" style={{background:"#fff", height:"100%"}}>
+      <div className="wrapper" style={{background:"linear-gradient(to right,#536976,#292E49)"}}>
         {    
           this.state.certificates.map(certi=><Card name={certi.Name} url={certi.imageUrl}></Card>)
         }

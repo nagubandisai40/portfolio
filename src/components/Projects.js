@@ -84,7 +84,7 @@ class Project extends Component {
           <Tab>Flutter</Tab>
           <Tab>Data Science</Tab>
         </Tabs>
-        <div style={{padding:"20px"}}>
+        <div style={{marginTop:"15px"}}>
         {this.getTabContent()}
         </div>
         {/* <Grid>
