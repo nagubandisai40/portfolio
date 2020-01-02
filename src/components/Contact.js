@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../css/card.css';
+import Particles from 'react-particles-js';
 import { Card } from 'react-mdl';
 import { browserHistory } from 'react-router-dom';
 import axios from 'axios';
@@ -37,31 +38,32 @@ class Contact extends Component {
 
   submitFirebase = event => {
     event.preventDefault();
-    const user={
-      name:this.state.name,
-      email:this.state.email,
-      suggesstion:this.state.suggession,
+    const user = {
+      name: this.state.name,
+      email: this.state.email,
+      suggesstion: this.state.suggession,
     };
-    axios.post("https://portfolio-4bbe9.firebaseio.com/feedback.json",user).then(res=>{
+    axios.post("https://portfolio-4bbe9.firebaseio.com/feedback.json", user).then(res => {
       console.log(res.data);
       console.log(res.status);
-      if(res.status==200)
-      {
+      if (res.status == 200) {
         alert("Thank you for submitting feedback");
         this.props.history.push('/');
-      }else{
+      } else {
         alert("Your feedback has not been submitted due to some problem");
         this.props.history.push('/Contact');
-        
+
       }
     })
   }
 
+
   render() {
+
     return (
-      <div style={{ width: "100%", height: "100%" }} className="parent">
+      <div style={{ width: "100%", height: "100%" }} id='contactId' className="parent">
         <div className="child11">
-          <Card shadow={0} calssName="contact-card" style={{ margin: 'auto'}}>
+          <Card shadow={0} calssName="contact-card" style={{ margin: 'auto' }}>
             <center><h4>Feedback Form</h4></center>
             <br></br>
             <div className="inputfields">

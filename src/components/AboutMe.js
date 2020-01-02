@@ -24,7 +24,7 @@ much interested in analyzing a huge amount of data and to extract the knowledge 
                   </a>
                   {/* Hacker Rank */}
                   <a href="https://www.hackerrank.com/Nagubandisai40" rel="noopener noreferrer">
-                  <i class="fa fa-code" aria-hidden="true"></i>
+                  <span className="iconify" data-icon="simple-icons:hackerrank" style={{color:"#fff",fontSize:"30px"}} data-inline="false"></span>
                   </a>
                   {/* Twitter */}
                   <a href="https://twitter.com/Saii50495558" rel="noopener noreferrer">

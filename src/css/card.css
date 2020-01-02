@@ -164,6 +164,7 @@ div.wrapper{
     justify-content: center;
     align-content: center;
     align-items: center;
+    position:absolute;
 }
 
 .font-form {
@@ -199,6 +200,10 @@ div.wrapper{
 }
 
 .social-links i {
+    font-size: 30px;
+    color: #fff;
+}
+.social-links span {
     font-size: 30px;
     color: #fff;
 }
@@ -303,3 +308,5 @@ div.wrapper{
     background-color: skyblue;
     padding: 2.5%;
 }
+
+/* Particle ui for contact page */
