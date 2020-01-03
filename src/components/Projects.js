@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell } from 'react-mdl';
+import { Tabs, Tab} from 'react-mdl';
 import '../css/card.css';
 import axios from 'axios';
 import ProjectComponent from './projectComponent';
@@ -19,19 +19,19 @@ class Project extends Component {
   }
 
   getTabContent() {
-    if (this.state.activeTab == 0) {
+    if (this.state.activeTab === 0) {
       return (
         <div className="wrapper">
           {this.state.android.map(android => <ProjectComponent name={android.Name} imageUrl={android.imageUrl} githubUrl={android.githubUrl}></ProjectComponent>)}
         </div>
       )
-    } else if (this.state.activeTab == 1) {
+    } else if (this.state.activeTab === 1) {
       return (
         <div className="wrapper">
           {this.state.web.map(web => <ProjectComponent name={web.Name} githubUrl={web.githubUrl} imageUrl={web.imageUrl}></ProjectComponent>)}
         </div>
       );
-    } else if (this.state.activeTab == 2) {
+    } else if (this.state.activeTab === 2) {
       return (
         <div className="wrapper">
           {this.state.flutter.map(flutter => <ProjectComponent name={flutter.Name} githubUrl={flutter.githubUrl} imageUrl={flutter.imageUrl}></ProjectComponent>)}
@@ -77,7 +77,7 @@ class Project extends Component {
 
   render() {
     return (
-      <div style={{background:"#fff",height:"100%"}}>
+      <div id="particles-project" style={{background:"#fff",height:"100vh",}}>
         <div className="demo-tabs" >
           <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
             <Tab>Android</Tab>

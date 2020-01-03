@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
 import axios from 'axios';
-import Card from './Card';
+// import Card from './Card';
 import '../css/card.css';
 
 class Resume extends Component {
@@ -32,7 +32,7 @@ componentDidMount(){
       
       <div style={{height:"100%" }}>
         {
-          this.state.resume.map(resume=><iframe src={resume.pdfUrl}  height="100%" width="100%"></iframe>)
+          this.state.resume.map(resume=><iframe title="Resume" src={resume.pdfUrl}  height="100%" width="100%"></iframe>)
         }
       </div>
 

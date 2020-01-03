@@ -12,6 +12,7 @@ class Certificate extends Component {
     };
   }
   componentDidMount() {
+
     axios.get("https://portfolio-4bbe9.firebaseio.com/certificates.json").then(res => {
       // console.log(res.data);
       const fetchedData = [];
@@ -29,8 +30,8 @@ class Certificate extends Component {
   
 
   render() {
-    return (
-      <div className="wrapper" style={{background:"linear-gradient(to right,#536976,#292E49)"}}>
+    return (  
+        <div  className="wrapper" style={{background:"linear-gradient(to right,#536976,#292E49)"}}>
         {    
           this.state.certificates.map(certi=><Card name={certi.Name} url={certi.imageUrl}></Card>)
         }

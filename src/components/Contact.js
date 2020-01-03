@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../css/card.css';
-import Particles from 'react-particles-js';
+// import Particles from 'react-particles-js';
 import { Card } from 'react-mdl';
-import { browserHistory } from 'react-router-dom';
+// import { browserHistory } from 'react-router-dom';
 import axios from 'axios';
 // import { FormGroup, Form, Input, Label } from 'reactstrap';
-import { Button } from 'react-mdl';
+// import { Button } from 'react-mdl';
 class Contact extends Component {
   constructor() {
     super()
@@ -46,7 +46,7 @@ class Contact extends Component {
     axios.post("https://portfolio-4bbe9.firebaseio.com/feedback.json", user).then(res => {
       console.log(res.data);
       console.log(res.status);
-      if (res.status == 200) {
+      if (res.status === 200) {
         alert("Thank you for submitting feedback");
         this.props.history.push('/');
       } else {
